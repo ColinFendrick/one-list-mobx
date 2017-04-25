@@ -6,8 +6,8 @@ class App extends Component {
   render () {
     return <div className={styles.App}>
       One List
-      <InputBar />
       <ItemList />
+      <InputBar />
     </div>
   }
 }
