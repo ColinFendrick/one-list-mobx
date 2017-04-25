@@ -1,4 +1,4 @@
-import { observable, toJS } from 'mobx'
+import { observable } from 'mobx'
 
 class Store {
   @observable
@@ -6,10 +6,9 @@ class Store {
 
   addItem (label) {
     this.listItems = [...this.listItems, {label, completed: false}]
-    console.log(toJS(this.listItems))
   }
 
-  markComplete (i) {
+  markComplete = (i) => {
     this.listItems[i].completed = !this.listItems[i].completed
   }
 
