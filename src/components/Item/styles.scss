@@ -1,0 +1,9 @@
+li {
+  margin: 0.2em;
+  font-family: "Neucha", cursive;
+}
+
+li.completed {
+  opacity: 0.5;
+  text-decoration: line-through;
+}

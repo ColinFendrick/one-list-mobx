@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom'
 import { AppContainer } from 'react-hot-loader'
 import Redbox from 'redbox-react'
 
-import App from './components/App'
+import { App } from './components'
 
 import './styles/screen.scss'
 
