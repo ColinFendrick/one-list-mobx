@@ -3,6 +3,7 @@ import { observer } from 'mobx-react'
 import store from '../../store'
 import styles from './styles.scss'
 import classNames from 'classnames/bind'
+
 const cx = classNames.bind(styles)
 
 @observer
