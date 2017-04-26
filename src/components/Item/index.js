@@ -17,7 +17,8 @@ class Item extends Component {
   }
 
   render () {
-    return <li onClick={this._click} onDoubleClick={this._dblClick} className={cx(store.listItems[this.props.index].completed ? 'completed' : '')}>
+    return <li onClick={this._click} onDoubleClick={this._dblClick}
+      className={cx(store.listItems[this.props.index].completed ? 'completed' : '')}>
       {this.props.label}
     </li>
   }
