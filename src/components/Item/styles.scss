@@ -1,3 +1,7 @@
+ul {
+  width: 275px;
+}
+
 li {
   margin: 0.2em;
   font-family: cursive;
@@ -6,4 +10,19 @@ li {
 li.completed {
   opacity: 0.5;
   text-decoration: line-through;
+}
+
+.entry {
+  display: flex;
+  justify-content: space-around;
+}
+
+.delete {
+  opacity: 0;
+}
+
+.entry:hover {
+  .delete {
+    opacity: 1;
+  }
 }

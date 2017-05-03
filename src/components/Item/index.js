@@ -12,14 +12,20 @@ class Item extends Component {
     store.markComplete(this.props.index)
   }
 
-  _dblClick = () => {
+  _delete = e => {
     store.delete(this.props.index)
   }
 
   render () {
-    return <li onClick={this._click} onDoubleClick={this._dblClick}
-      className={cx(store.listItems[this.props.index].completed ? 'completed' : '')}>
-      {this.props.label}
+    return <li className={cx(store.listItems[this.props.index].completed ? 'completed' : '')}>
+      <div onClick={this._click} className={styles.entry}>
+        {this.props.label}
+        <button className={styles.delete}
+          onClick={this._delete}
+          value='x' name='delete'>
+          x
+        </button>
+      </div>
     </li>
   }
 }
